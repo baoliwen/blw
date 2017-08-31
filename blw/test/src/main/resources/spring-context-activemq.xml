@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context-2.5.xsd">
+
+
+
+    <!-- 1.配置connectionFactory -->
+    <bean id="jmsFactory" class="org.apache.activemq.pool.PooledConnectionFactory" destroy-method="stop">
+        <property name="connectionFactory">
+            <bean class="org.apache.activemq.ActiveMQConnectionFactory">
+                <property name="brokerURL" value="${activemq.address}"/>
+                <property name="useAsyncSend" value="true" />
+                <property name="alwaysSessionAsync" value="true" />
+                <property name="useDedicatedTaskRunner" value="false" />
+            </bean>
+        </property>
+        <property name="maxConnections" value="100"></property>
+    </bean>
+
+    <!-- 消息的目的地（一个队列） -->
+    <bean id="test_queue" class="org.apache.activemq.command.ActiveMQQueue">
+        <!-- 设置消息队列的名字 -->
+        <constructor-arg index="0" value="blw_test"></constructor-arg>
+    </bean>
+
+    <!-- 5.配置消费者 -->
+   <bean id="consumer" class="com.blw.mq.ActiveMqMessageRec"/>
+
+    <!-- 消息监听容器 -->
+    <bean id="jmsContainer" class="org.springframework.jms.listener.DefaultMessageListenerContainer">
+        <property name="connectionFactory" ref="jmsFactory" />
+        <property name="destination" ref="test_queue" />
+        <property name="messageListener" ref="consumer" />
+    </bean>
+
+</beans>

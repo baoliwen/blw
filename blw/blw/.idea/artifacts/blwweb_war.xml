@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="blwweb:war">
+    <output-path>$PROJECT_DIR$/blwweb/target</output-path>
+    <root id="archive" name="blw-web.war">
+      <element id="artifact" artifact-name="blwweb:war exploded" />
+    </root>
+  </artifact>
+</component>

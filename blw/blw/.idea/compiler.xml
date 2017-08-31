@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="blwcenterinfo" />
+        <module name="blwclient" />
+        <module name="blwcommon" />
+        <module name="blwordermapper" />
+        <module name="blwresources" />
+        <module name="blwservice" />
+        <module name="blwweb" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="blw" target="1.7" />
+      <module name="blwcenterinfo" target="1.7" />
+      <module name="blwclient" target="1.7" />
+      <module name="blwcommon" target="1.7" />
+      <module name="blwordermapper" target="1.7" />
+      <module name="blwresources" target="1.7" />
+      <module name="blwservice" target="1.7" />
+      <module name="blwweb" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

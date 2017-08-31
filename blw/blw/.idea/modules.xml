@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/blw.iml" filepath="$PROJECT_DIR$/blw.iml" />
+      <module fileurl="file://$PROJECT_DIR$/blwcenterinfo/blwcenterinfo.iml" filepath="$PROJECT_DIR$/blwcenterinfo/blwcenterinfo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/blwclient/blwclient.iml" filepath="$PROJECT_DIR$/blwclient/blwclient.iml" />
+      <module fileurl="file://$PROJECT_DIR$/blwcommon/blwcommon.iml" filepath="$PROJECT_DIR$/blwcommon/blwcommon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/blwordermapper/blwordermapper.iml" filepath="$PROJECT_DIR$/blwordermapper/blwordermapper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/blwresources/blwresources.iml" filepath="$PROJECT_DIR$/blwresources/blwresources.iml" />
+      <module fileurl="file://$PROJECT_DIR$/blwservice/blwservice.iml" filepath="$PROJECT_DIR$/blwservice/blwservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/blwweb/blwweb.iml" filepath="$PROJECT_DIR$/blwweb/blwweb.iml" />
+    </modules>
+  </component>
+</project>
