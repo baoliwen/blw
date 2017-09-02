@@ -99,6 +99,17 @@
             <artifactId>mybatis-spring</artifactId>
             <version>${mybatis-spring.version}</version>
         </dependency>
+        <!-- shrding-jdbc -->
+        <dependency>
+            <groupId>com.dangdang</groupId>
+            <artifactId>sharding-jdbc-core</artifactId>
+            <version>1.4.2</version>
+        </dependency>
+        <dependency>
+            <groupId>com.dangdang</groupId>
+            <artifactId>sharding-jdbc-config-spring</artifactId>
+            <version>1.4.0</version>
+        </dependency>
 
         <!-- connection pool -->
         <dependency>

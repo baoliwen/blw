@@ -35,7 +35,7 @@
             <property name="enableSubPackages" value="true"/>
         </javaClientGenerator>
 
-        <table schema="blw" tableName="t_supply_product" domainObjectName="SupplyProduct"
+        <table schema="blw" tableName="sys_log" domainObjectName="SysLog"
 
                enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false"
                enableUpdateByExample="false">
