@@ -50,7 +50,6 @@
     <orderEntry type="library" name="Maven: org.jasig.cas.client:cas-client-core:3.2.1" level="project" />
     <orderEntry type="library" name="Maven: org.apache.shiro:shiro-web:1.2.3" level="project" />
     <orderEntry type="library" name="Maven: org.apache.shiro:shiro-ehcache:1.2.3" level="project" />
-    <orderEntry type="library" name="Maven: net.sf.ehcache:ehcache-core:2.5.0" level="project" />
     <orderEntry type="module" module-name="blwresources" />
     <orderEntry type="library" name="Maven: tk.mybatis:mapper:3.3.9" level="project" />
     <orderEntry type="library" name="Maven: javax.persistence:persistence-api:1.0" level="project" />
@@ -64,6 +63,10 @@
     <orderEntry type="library" name="Maven: com.dangdang:sharding-jdbc-config-spring:1.4.0" level="project" />
     <orderEntry type="library" name="Maven: com.dangdang:sharding-jdbc-config-common:1.4.0" level="project" />
     <orderEntry type="library" name="Maven: org.codehaus.groovy:groovy:indy:2.4.5" level="project" />
+    <orderEntry type="library" name="Maven: net.sf.ehcache:ehcache-core:2.6.11" level="project" />
+    <orderEntry type="library" name="Maven: net.sf.ehcache:ehcache-web:2.0.4" level="project" />
+    <orderEntry type="library" name="Maven: redis.clients:jedis:2.5.1" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.commons:commons-pool2:2.0" level="project" />
     <orderEntry type="library" name="Maven: com.alibaba:druid:1.0.18" level="project" />
     <orderEntry type="module-library">
       <library name="Maven: com.alibaba:jconsole:1.8.0">
