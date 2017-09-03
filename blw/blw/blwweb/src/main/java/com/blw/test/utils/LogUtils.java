@@ -1,15 +1,11 @@
 /**
  * Copyright &copy; 2012-2016 <a href="https://github.com/thinkgem/jeesite">JeeSite</a> All rights reserved.
  */
-package com.blw.utils;
+package com.blw.test.utils;
 
 import com.blw.dao.SysLogMapper;
 import com.blw.entity.SysLog;
 import com.blw.test.enums.LogTypeEnum;
-import com.blw.test.utils.Exceptions;
-import com.blw.test.utils.IdGen;
-import com.blw.test.utils.SpringContextHolder;
-import com.blw.test.utils.StringUtils;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.web.method.HandlerMethod;
 

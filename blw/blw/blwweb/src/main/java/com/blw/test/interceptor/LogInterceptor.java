@@ -3,7 +3,7 @@
  */
 package com.blw.test.interceptor;
 
-import com.blw.utils.LogUtils;
+import com.blw.test.utils.LogUtils;
 import org.apache.commons.lang3.time.DateFormatUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

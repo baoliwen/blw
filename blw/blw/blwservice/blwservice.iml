@@ -19,13 +19,6 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="blwclient" />
     <orderEntry type="module" module-name="blwcenterinfo" />
-    <orderEntry type="library" name="Maven: org.apache.shiro:shiro-core:1.2.3" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.shiro:shiro-spring:1.2.3" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.shiro:shiro-cas:1.2.3" level="project" />
-    <orderEntry type="library" name="Maven: org.jasig.cas.client:cas-client-core:3.2.1" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.shiro:shiro-web:1.2.3" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.shiro:shiro-ehcache:1.2.3" level="project" />
-    <orderEntry type="library" name="Maven: net.sf.ehcache:ehcache-core:2.5.0" level="project" />
     <orderEntry type="module" module-name="blwordermapper" />
     <orderEntry type="module" module-name="blwcommon" />
     <orderEntry type="library" name="Maven: org.springframework:spring-jms:4.1.9.RELEASE" level="project" />
@@ -53,6 +46,13 @@
     <orderEntry type="library" name="Maven: org.springframework.amqp:spring-rabbit:1.4.5.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.retry:spring-retry:1.1.2.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.amqp:spring-amqp:1.4.5.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.shiro:shiro-core:1.2.3" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.shiro:shiro-spring:1.2.3" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.shiro:shiro-cas:1.2.3" level="project" />
+    <orderEntry type="library" name="Maven: org.jasig.cas.client:cas-client-core:3.2.1" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.shiro:shiro-web:1.2.3" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.shiro:shiro-ehcache:1.2.3" level="project" />
+    <orderEntry type="library" name="Maven: net.sf.ehcache:ehcache-core:2.5.0" level="project" />
     <orderEntry type="module" module-name="blwresources" />
     <orderEntry type="library" name="Maven: tk.mybatis:mapper:3.3.9" level="project" />
     <orderEntry type="library" name="Maven: javax.persistence:persistence-api:1.0" level="project" />
