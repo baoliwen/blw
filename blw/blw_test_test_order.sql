@@ -25,7 +25,7 @@ DROP TABLE IF EXISTS `test_order`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `test_order` (
-  `id` int(11) NOT NULL DEFAULT '0',
+  `id` VARCHAR(64) NOT NULL DEFAULT '0',
   `test_ordercol` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=ujis;
