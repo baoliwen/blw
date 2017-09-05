@@ -21,10 +21,10 @@ public class TestMq {
     @Test
     public void testSessionAwareMessageListener() {
         for (int i = 0; i < 20; i++) {
-            producer.send("是的发生的发生的"+i);
-            producer.send("阿萨德刚我国庆魏国强"+i);
-            producer.send("徐子轩从V字形从v"+i);
-            producer.send("1231236123"+i);
+            producer.send("+++++++"+i);
+            producer.send("========"+i);
+            producer.send("————————————————"+i);
+            producer.send("---------------------"+i);
         }
     }
     /*public static void main(String[] args) {

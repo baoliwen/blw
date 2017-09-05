@@ -6,7 +6,7 @@ import javax.persistence.*;
 public class TestOrder {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+    private String id;
 
     @Column(name = "test_ordercol")
     private String testOrdercol;
@@ -14,14 +14,14 @@ public class TestOrder {
     /**
      * @return id
      */
-    public Integer getId() {
+    public String getId() {
         return id;
     }
 
     /**
      * @param id
      */
-    public void setId(Integer id) {
+    public void setId(String id) {
         this.id = id;
     }
 

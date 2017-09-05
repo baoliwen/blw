@@ -145,6 +145,49 @@ public class JedisUtils {
 		}
 		return value;
 	}
+
+	/**
+	 * 获取List缓存
+	 * @param key 键
+	 * @return 值
+	 */
+	public static List<String> getList(String key,long start, long end) {
+		List<String> value = null;
+		Jedis jedis = null;
+		try {
+			jedis = getResource();
+			if (jedis.exists(key)) {
+				value = jedis.lrange(key, start, end);
+				logger.debug("getList {} = {}", key, value);
+			}
+		} catch (Exception e) {
+			logger.warn("getList {} = {}", key, value, e);
+		} finally {
+			returnResource(jedis);
+		}
+		return value;
+	}
+	/**
+	 * 去除不要的部分记录，比如一个list中有100条记录，只需要0-50
+	 * @param key 键
+	 * @return 值
+	 */
+	public static String ltrim(String key,long start, long end) {
+		String value = null;
+		Jedis jedis = null;
+		try {
+			jedis = getResource();
+			if (jedis.exists(key)) {
+				value = jedis.ltrim(key, start, end);
+				logger.debug("getList {} = {}", key, value);
+			}
+		} catch (Exception e) {
+			logger.warn("getList {} = {}", key, value, e);
+		} finally {
+			returnResource(jedis);
+		}
+		return value;
+	}
 	
 	/**
 	 * 获取List缓存
@@ -199,7 +242,7 @@ public class JedisUtils {
 		}
 		return result;
 	}
-	
+
 	/**
 	 * 设置List缓存
 	 * @param key 键
@@ -798,7 +841,7 @@ public class JedisUtils {
 
 	/**
 	 * 获取byte[]类型Key
-	 * @param key
+	 * @param object
 	 * @return
 	 */
 	public static byte[] getBytesKey(Object object){
@@ -829,8 +872,8 @@ public class JedisUtils {
 	
 	/**
 	 * Object转换byte[]类型
-	 * @param key
-	 * @return
+	 * @param object
+	 * @return byte[]
 	 */
 	public static byte[] toBytes(Object object){
     	return ObjectUtils.serialize(object);
@@ -838,8 +881,8 @@ public class JedisUtils {
 
 	/**
 	 * byte[]型转换Object
-	 * @param key
-	 * @return
+	 * @param bytes
+	 * @return Object
 	 */
 	public static Object toObject(byte[] bytes){
 		return ObjectUtils.unserialize(bytes);
