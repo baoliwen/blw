@@ -1,4 +1,4 @@
-CREATE DATABASE  IF NOT EXISTS `blw_test` /*!40100 DEFAULT CHARACTER SET ujis */;
+CREATE DATABASE  IF NOT EXISTS `blw_test` /*!40100 DEFAULT CHARACTER SET utf8 */;
 USE `blw_test`;
 -- MySQL dump 10.13  Distrib 5.7.17, for Win64 (x86_64)
 --
